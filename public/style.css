@@ -1,0 +1,22 @@
+
+body {
+    margin:0;
+}
+h1 {
+    font-family:Amaranth;
+    background:hsl(150, 50%, 50%);
+    color:white;
+    text-shadow: 2px -2px black;
+    margin:0;    
+    text-align:center;
+    border:solid 2px black;
+}
+td, th {
+    border:solid 1px black;
+}
+table {
+    border-collapse:collapse;
+    margin:auto;
+}
+
+

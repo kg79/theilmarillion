@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Amaranth&display=swap" rel="stylesheet">
+        <link rel='stylesheet' href='style.css'>
+    </head>
+    <body>
+        <h1>The Ilmarillion</h1>
+      <table>
+          <th>
+              #
+          </th>
+          <tr>
+                <td class='trackNumbers'>
+                    
+                </td>
+          </tr>
+      </table> 
+        <audio controls id='theMusic'>
+            <source src="A1.WAV" type="audio/wav">
+        </audio>
+    </body>
+    <script>
+   const theMusic = document.getElementById('theMusic') 
+   let count = 1, tracks = [
+       'A1.WAV', 'A2.WAV', 'A3.WAV'
+   ];
+
+   theMusic.onended = () => {
+       
+        count++;
+        if (count > tracks.length) {
+            count = 1;
+        }
+        theMusic.src = `A${count}.WAV`; 
+       
+   } 
+   const trackNumbers = document.getElementsByClassName('trackNumbers');
+   for (let i in trackNumbers) {
+       trackNumbers[i].innerText = i;
+   } 
+    </script>
+</html>
