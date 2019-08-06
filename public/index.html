@@ -16,14 +16,14 @@
                 </td>
           </tr>
       </table> 
-        <audio controls id='theMusic'>
+        <audio controls id='theMusic' autoplay>
             <source src="A1.WAV" type="audio/wav">
         </audio>
     </body>
     <script>
    const theMusic = document.getElementById('theMusic') 
    let count = 1, tracks = [
-       'A1.WAV', 'A2.WAV', 'A3.WAV'
+       'A1.WAV', 'A2.WAV', 'A3.WAV', 'A4.WAV', 'A5.WAV', 'A6.WAV', 'A7.WAV'
    ];
 
    theMusic.onended = () => {
